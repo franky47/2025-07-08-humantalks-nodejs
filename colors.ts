@@ -18,7 +18,8 @@ export function applyColor(color: AnsiColor, text: string): string {
     bgCyan: '46',
     bgWhite: '47',
   }[color]
-  return `${ctlEsc}${colorCode}m${text}${ctlEsc}0m`
+  const reset = color.startsWith('bg') ? '49' : '39'
+  return `${ctlEsc}${colorCode}m${text}${ctlEsc}${reset}m`
 }
 
 export type Color =
