@@ -99,7 +99,7 @@ class MatrixRain {
       return
     }
     const pos = ansi.cursorPos(row, col)
-    write(`${pos}${applyColor(color, str)}`)
+    write(`${pos}${applyColor(color, str ?? '')}`)
   }
 
   renderFrame() {
