@@ -1,0 +1,23 @@
+{
+  "name": "2025-07-08-humantalks-nodejs",
+  "version": "0.0.0",
+  "description": "Node.js can do that?! - Human Talks Grenoble 2025-07-08",
+  "type": "module",
+  "scripts": {
+    "start": "node --no-warnings --env-file=.env --watch=.env matrix.ts"
+  },
+  "author": "François Best",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "argparse": "^2.0.1",
+    "strip-ansi": "^7.1.0",
+    "zod": "^3.25.67"
+  }
+}
