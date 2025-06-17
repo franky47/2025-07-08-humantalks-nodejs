@@ -25,3 +25,10 @@ pnpm install
 ```shell
 pnpm start
 ```
+
+## Credits
+
+The Matrix Rain code is adapted from this repository:
+https://github.com/nojvek/matrix-rain
+
+The Matrix is a trademark of Warner Bros. Entertainment Inc.
