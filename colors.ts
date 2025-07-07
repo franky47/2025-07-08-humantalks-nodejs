@@ -1,7 +1,7 @@
 import chalk from 'chalk'
 
 export function applyColor(color: AnsiColor, text: string): string {
-  return applyColorWithAnsi(color, text)
+  return applyColorWithChalk(color, text)
 }
 
 function applyColorWithAnsi(color: AnsiColor, text: string): string {
