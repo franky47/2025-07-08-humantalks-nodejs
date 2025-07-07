@@ -1,0 +1,118 @@
+# François Best
+
+🦋 @francoisbest.com
+🐙 @franky47
+
+> Dévelopeur freelance (TS, Node.js, React)
+> Contributeur OSS (47ng/nuqs, Next.js)
+
+---
+
+# Node.js can do that?! 🤯
+
+Objectif: réduire nos `node_modules`
+
+> Tip: MàJ vos versions!
+
+---
+
+# Enter The Matrix 😎
+
+---
+
+# Transpilation
+
+Avant:
+
+- `ts-node` + (`tsc` | `swc`)
+- `tsx`
+
+Après:
+
+- `--experimental-strip-types`: >=22.6
+- Built-in: >=23.6
+
+---
+
+# Environment
+
+Avant:
+
+- `dotenv` (now with ads! 💸)
+
+Après:
+
+- `--env-file`: >= 20.6
+
+---
+
+# Output colouring
+
+Avant:
+
+- `chalk`
+- `kleur`
+- `ansi-colors`
+- etc
+
+Après:
+
+- `import { styleText } from node:utils`: >=21.7
+
+---
+
+# Watching the FS
+
+Avant:
+
+- `chokidar`
+- `nodemon`
+
+Après:
+
+- `--watch`: >=22
+
+---
+
+# Testing
+
+Avant:
+
+- `jest`
+- `vitest`
+
+Après:
+
+- `node:test`: >=20
+
+---
+
+# Permissions
+
+Avant: 🦗 (mais dans Deno 🦕)
+
+Après:
+
+- `--permission`: >=22.13
+- `--allow-fs-read` etc
+
+---
+
+# require(ESM)
+
+Avant:
+
+- ✅ CJS: require(CJS)
+- ❌ CJS: require(ESM)
+- ✅ ESM: import CJS
+- ✅ ESM: import ESM
+
+Après: interopérabilité
+
+- ✅ CJS: require(CJS)
+- ✅ CJS: require(ESM) (>=20.17 🙌)
+- ✅ ESM: import CJS
+- ✅ ESM: import ESM
+
+> Caveat: pas de top-level await,
+> les modules doivent être synchrones.
