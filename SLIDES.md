@@ -4,7 +4,7 @@
 🐙 @franky47
 
 > Dévelopeur freelance (TS, Node.js, React)
-> Contributeur OSS (47ng/nuqs, Next.js)
+> Contributeur OSS (`47ng/nuqs`, Next.js)
 
 ---
 
