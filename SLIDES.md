@@ -116,3 +116,14 @@ Après: interopérabilité
 
 > Caveat: pas de top-level await,
 > les modules doivent être synchrones.
+
+---
+
+# Merci!
+
+Liens:
+
+- [Repo (code & slides)](https://github.com/franky47/2025-07-08-humantalks-nodejs)
+- [BlueSky](https://bsky.app/profile/francoisbest.com)
+- [LinkedIn](https://www.linkedin.com/in/francoisbest/)
+- [nuqs (URL state manager for React)](https://nuqs.47ng.com)
