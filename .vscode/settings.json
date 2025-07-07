@@ -1,7 +1,9 @@
 {
-  "editor.fontSize": 28,
+  "editor.fontSize": 26,
   "terminal.integrated.fontSize": 16,
-  "window.zoomLevel": -3,
+  "window.title": "${activeEditorShort}",
+  "window.density.editorTabHeight": "compact",
+  "window.zoomLevel": 1,
   "editor.snippetSuggestions": "none",
   "workbench.colorCustomizations": {
     "[One Monokai]": {
