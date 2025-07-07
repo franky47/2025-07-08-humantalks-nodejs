@@ -1,3 +1,5 @@
+// require-esm.cts (forcing CJS + TS mode)
+
 const { humanTalks } = require('./top-level-await.mts')
 
 // require(ESM)

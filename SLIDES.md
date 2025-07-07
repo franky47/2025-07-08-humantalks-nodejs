@@ -100,6 +100,16 @@ Après:
 
 # require(ESM)
 
+```ts
+// CommonJS
+module.exports.hello = 'world'
+const { hello } = require('./hello.cjs')
+
+// ES Modules
+export const hello = 'world'
+import { hello } from './hello.mjs'
+```
+
 Avant:
 
 - ✅ CJS: require(CJS)
