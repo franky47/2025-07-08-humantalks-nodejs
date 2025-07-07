@@ -119,6 +119,17 @@ Après: interopérabilité
 
 ---
 
+# Recap
+
+- `node *.ts`
+- `--env-file`
+- `--watch`
+- `--permission`, `--allow-fs-read` etc
+- `--test` & `node:test`
+- `styleText` from `node:util`
+
+---
+
 # Merci!
 
 Liens:
