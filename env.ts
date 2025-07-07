@@ -1,4 +1,7 @@
+import { config } from 'dotenv'
 import { z } from 'zod/v4'
+
+config()
 
 const envSchema = z.object({
   THEME: z.literal(['green', 'red', 'rainbow']).default('green').catch('green'),

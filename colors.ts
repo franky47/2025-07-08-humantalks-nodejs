@@ -1,4 +1,10 @@
+import chalk from 'chalk'
+
 export function applyColor(color: AnsiColor, text: string): string {
+  return applyColorWithAnsi(color, text)
+}
+
+function applyColorWithAnsi(color: AnsiColor, text: string): string {
   const ctlEsc = `\x1b[`
   const colorCode = {
     black: '30',
@@ -20,6 +26,15 @@ export function applyColor(color: AnsiColor, text: string): string {
   }[color]
   const reset = color.startsWith('bg') ? '49' : '39'
   return `${ctlEsc}${colorCode}m${text}${ctlEsc}${reset}m`
+}
+
+function applyColorWithChalk(color: AnsiColor, text: string): string {
+  // Side demo: require(esm)
+  const method = chalk[color]
+  if (!method || typeof method !== 'function') {
+    throw new TypeError(`Unknown color: ${color}`)
+  }
+  return method(text)
 }
 
 export type Color =
