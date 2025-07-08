@@ -3,7 +3,7 @@
 🦋 @francoisbest.com
 🐙 @franky47
 
-> Dévelopeur freelance (TS, Node.js, React)
+> Dévelopeur freelance (FullStack TS, Node.js, React)
 > Contributeur OSS (`47ng/nuqs`, Next.js)
 
 ---
